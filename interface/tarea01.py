@@ -77,9 +77,9 @@ def helice_circular_1():
     r = 5
     y = r * np.sin(t)
     x = r * np.cos(t)
-    ax.plot(x, y, z, 'b', lw=2)
-
-    # linea roja al centro de la helice circular
+    ax.plot(x, y, z, 'b', lw=2, label='Curva Hélice Circular')
+    ax.legend()
+    # linea ax.legend()oja al centro de la helice circular
     ax.plot((0, 0), (0, 0), (-t_max * 0.2, t_max * 1.2), color='r', lw=2)
 
     plt.show()
